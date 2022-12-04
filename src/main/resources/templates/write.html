@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>write.html입니다</title>
+</head>
+<style>
+    .list-w {
+        /*text-align: center;*/
+        margin-left: 30% ;
+    }
+    .list-w > form > input{
+        width: 35%;
+        height: 35px;
+    }
+    .list-w > form> textarea{
+        width: 50%;
+        height: 300px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+</style>
+
+
+<body>
+
+<div class = "list-w">
+    <form action="/board" method="post">
+        <input name="title" type="text">
+        <br>
+        <textarea name="contents"></textarea>
+        <br>
+        <button type="submit">작성완료</button>
+    </form>
+</div>
+
+</body>
+</html>
