@@ -8,7 +8,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 @Controller
-//@RequestMapping("/board")
+@RequestMapping("/board")
 public class BoardCon {
 
     private final BoardSer boardSer;
@@ -29,10 +29,10 @@ public class BoardCon {
     }
 
 
-    @GetMapping("/view") //view?id=1
-    public String boardView(Model model,Long id){
-        model.addAttribute("view",boardSer.boardView(id));
-        return "view";
+        @GetMapping("/view") //view?id=1
+        public String boardView(Model model,Long id){
+            model.addAttribute("view",boardSer.boardView(id));
+            return "view";
     }
 
 
