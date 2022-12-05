@@ -28,8 +28,15 @@ public class BoardSer {
         return boardRepo.findAll();
     }
 
-    //특정 id글 불러오기
-    public Board boardView(Long id){
+        //특정 id글 불러오기
+        public Board boardView(Long id){
         return boardRepo.findById(id).get();
     }
+
+    //특정 id 수정
+
+
+    //특정 id 삭제
+//    public void boardDel(Board board){
+//    }
 }
