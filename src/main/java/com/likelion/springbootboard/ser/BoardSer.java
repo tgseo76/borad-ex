@@ -28,7 +28,7 @@ public class BoardSer {
         return boardRepo.findAll();
     }
 
-    //글 불러오기
+    //특정 id글 불러오기
     public Board boardView(Long id){
         return boardRepo.findById(id).get();
     }

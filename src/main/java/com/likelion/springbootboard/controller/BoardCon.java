@@ -17,22 +17,25 @@ public class BoardCon {
         this.boardSer = boardSer;
     }
 
+    //리스트페이지
     @GetMapping("/list")
     public String boardList(Model model){
         model.addAttribute("list", boardSer.boardList());
         return "list";
     }
 
+    //글작성 페이지
     @GetMapping("/write")
     public String write(){
         return "write";
     }
 
 
-        @GetMapping("/view") //view?id=1
-        public String boardView(Model model,Long id){
-            model.addAttribute("view",boardSer.boardView(id));
-            return "view";
+    //글 상세페이지
+    @GetMapping("/view") //view?id=1
+    public String boardView(Model model,Long id){
+        model.addAttribute("view",boardSer.boardView(id));
+        return "view";
     }
 
 
@@ -49,7 +52,7 @@ public class BoardCon {
         //        System.out.println("작성완료");
 
 
-        ///write에서 제목 내용 쓴거 db에 저장
+        ///v2 write에서 제목 내용 쓴거 db에 저장
         boardSer.boardWrite(board);
         return "";
     }
