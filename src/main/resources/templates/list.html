@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>리스트 thym</title>
+</head>
+
+<style>
+    .layout {
+        /*text-align: center;*/
+        margin-left: 30% ;
+    }
+</style>
+
+<body>
+    <div class = "layout">
+        <table>
+            <thead>
+                <tr>
+                    <th>글번호(id)</th>
+                    <th>제목(title)</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr th:each="bbb : ${list}">
+                <td th:text="${bbb.id}"></td>
+                <td>
+                    <a th:text="${bbb.title}" th:href="@{/api/v1/boards/{id}(id=${bbb.id})}"></a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
