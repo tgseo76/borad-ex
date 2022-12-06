@@ -46,6 +46,10 @@ public class BoardCon {
     public String write(){
         return "write";
     }
+    @GetMapping("/write")
+    public String write1(){
+        return "write";
+    }
 
     //개시글 등록 POST /api/v1/boards
     @PostMapping("")               // POST   /api/v1/boards
@@ -61,7 +65,7 @@ public class BoardCon {
 
         ///v2 write에서 제목 내용 쓴거 db에 저장
         boardSer.boardWrite(board);
-        return "";
+        return "redirect:/api/v1/boards/list";
     }
             //삭제
     @DeleteMapping("/{id}") //           delete    /api/v1/boards/1
@@ -87,6 +91,8 @@ public class BoardCon {
 
         boardTem.setTitle(board.getTitle());
         boardTem.setContents(board.getContents());
+
+        boardSer.boardWrite(boardTem);
 
         return "redirect:/api/v1/boards/list";
 
