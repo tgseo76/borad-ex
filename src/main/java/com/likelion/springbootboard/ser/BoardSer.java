@@ -3,6 +3,8 @@ package com.likelion.springbootboard.ser;
 import com.likelion.springbootboard.domain.entity.Board;
 import com.likelion.springbootboard.repo.BoardRepo;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -23,9 +25,9 @@ public class BoardSer {
         boardRepo.save(board);
     }
 
-    //db목록 보이기
-    public List<Board> boardList() {
-        return boardRepo.findAll();
+    //db목록가져와서 게시글 보이기
+    public Page<Board> boardList(Pageable pageable) {
+        return boardRepo.findAll(pageable);
     }
 
     //특정 id글 불러오기
