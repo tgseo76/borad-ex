@@ -4,6 +4,7 @@ package com.likelion.springbootboard.controller;
 import com.likelion.springbootboard.domain.entity.Board;
 import com.likelion.springbootboard.repo.BoardRepo;
 import com.likelion.springbootboard.ser.BoardSer;
+import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.web.PageableDefault;
@@ -24,8 +25,18 @@ public class BoardCon {
     //리스트페이지
     //v2 페이징처리
     @GetMapping("/list")
-    public String boardList(Model model, @PageableDefault(page = 0,size = 5,sort = "id",direction= Sort.Direction.DESC) Pageable pageable) {
-        model.addAttribute("list", boardSer.boardList(pageable));
+    public String boardList(Model model, @PageableDefault(page = 0,size = 10,sort = "id",direction= Sort.Direction.DESC) Pageable pageable) {
+
+        Page<Board> list = boardSer.boardList(pageable);
+
+        int page=list.getPageable().getPageNumber()+1; //현재페이지 0부터시작
+        int startPage=Math.max(page-4,1); //앞 페이지
+        int endPage=Math.min(page+5,list.getTotalPages()); //뒷 페이지
+
+        model.addAttribute("list", list);
+        model.addAttribute("page",page);
+        model.addAttribute("startPage",startPage);
+        model.addAttribute("endPage",endPage);
         return "list";
     }
 

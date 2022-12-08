@@ -38,8 +38,18 @@
 
 ## Step 3 : 등록,수정,삭제 메세지
 - 등록,수정,삭제시 ex) 등록되었습니다. 메세지 팝업
-- 
+
 ## Step 4 : 게시판 페이징
+- 최근 글이 제일 위로 오게 정렬
+- 10개씩 1페이지 5페이지 보이게 설정
+
+![](C:\Users\tjxor\git\borad-ex\img\page1.PNG)
+
+---
+
+![](C:\Users\tjxor\git\borad-ex\img\page2.PNG)
+![](C:\Users\tjxor\git\borad-ex\img\page3.PNG)
+
 
 
 

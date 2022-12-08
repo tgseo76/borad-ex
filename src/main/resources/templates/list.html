@@ -34,6 +34,11 @@
             </tr>
             </tbody>
         </table>
+
+        <th:block th:each="listpage : ${#numbers.sequence(startPage,endPage)}">
+            <a th:if="${listpage != page}" th:href="@{/api/v1/boards/list(page=${listpage -1})}" th:text="${listpage}"></a>
+            <strong th:if="${listpage == page}" th:text="${listpage}" style="color : red"></strong>
+        </th:block>
     </div>
 </body>
 </html>
