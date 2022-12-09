@@ -43,12 +43,12 @@
 - 최근 글이 제일 위로 오게 정렬
 - 10개씩 1페이지 5페이지 보이게 설정
 
-![](C:\Users\tjxor\git\borad-ex\img\page1.PNG)
+![](\img\page1.PNG)
 
 ---
 
-![](C:\Users\tjxor\git\borad-ex\img\page2.PNG)
-![](C:\Users\tjxor\git\borad-ex\img\page3.PNG)
+![](\img\page2.PNG)
+![](\img\page3.PNG)
 
 
 
