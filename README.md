@@ -43,8 +43,12 @@
 - 최근 글이 제일 위로 오게 정렬
 - 10개씩 1페이지 5페이지 보이게 설정
 
+![image](https://user-images.githubusercontent.com/58171107/206862222-845d1edf-c627-445b-9c34-c58c998a5f4d.png)
+
 ---
 
+![image](https://user-images.githubusercontent.com/58171107/206861857-b11b04fc-c71a-4c06-a930-6005eaacaf8d.png)
+![image](https://user-images.githubusercontent.com/58171107/206861869-cad2d17f-f6f0-477f-96b9-d8170d07a716.png)
 
 
 
