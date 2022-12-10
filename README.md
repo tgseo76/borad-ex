@@ -37,7 +37,8 @@
 - mvc 계층 레이어에 맞게 수정
 
 ## Step 3 : 등록,수정,삭제 메세지
-- 등록,수정,삭제시 ex) 등록되었습니다. 메세지 팝업
+- 등록,수정,삭제시 메세지 팝업 
+- ex) 등록되었습니다. , 삭제되었습니다
 
 ## Step 4 : 게시판 페이징
 - 최근 글이 제일 위로 오게 정렬
@@ -50,6 +51,13 @@
 ![image](https://user-images.githubusercontent.com/58171107/206861857-b11b04fc-c71a-4c06-a930-6005eaacaf8d.png)
 ![image](https://user-images.githubusercontent.com/58171107/206861869-cad2d17f-f6f0-477f-96b9-d8170d07a716.png)
 
+## Step 5 : 검색기능
+
+![image](https://user-images.githubusercontent.com/58171107/206865957-f5ed8c76-3d15-410e-82f8-34a2e164155c.png)
+
+---
+![image](https://user-images.githubusercontent.com/58171107/206866020-817cb8c7-9cd8-4d11-9408-b6cfed7b5283.png)
+![image](https://user-images.githubusercontent.com/58171107/206866002-5b99ffe9-a9aa-4408-95c2-2bbc107eafe5.png)
 
 
 

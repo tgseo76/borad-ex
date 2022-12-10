@@ -24,10 +24,21 @@ public class BoardCon {
 
     //리스트페이지
     //v2 페이징처리
+    //v3 검색기능
     @GetMapping("/list")
-    public String boardList(Model model, @PageableDefault(page = 0,size = 10,sort = "id",direction= Sort.Direction.DESC) Pageable pageable) {
+    public String boardList(Model model,
+                            @PageableDefault(page = 0,size = 10,sort = "id",direction= Sort.Direction.DESC) Pageable pageable,
+                            String keyword) {
 
-        Page<Board> list = boardSer.boardList(pageable);
+        Page<Board> list;
+
+        if(keyword==null){
+            list = boardSer.boardList(pageable);
+        }else {
+            list = boardSer.searchList(keyword,pageable);
+        }
+
+
 
         int page=list.getPageable().getPageNumber()+1; //현재페이지 0부터시작
         int startPage=Math.max(page-4,1); //앞 페이지

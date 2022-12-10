@@ -39,4 +39,9 @@ public class BoardSer {
     public void deleteById(Long id) {
         boardRepo.deleteById(id);
     }
+
+    //리스트 검색기능
+    public Page<Board> searchList(String keyword,Pageable pageable){
+        return boardRepo.findByTitleContaining(keyword,pageable);
+    }
 }
