@@ -5,7 +5,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;
 
-public interface MemberRepo extends JpaRepository<Member,String> {
+public interface MemberRepo extends JpaRepository<Member,Long> {
     //id로 회원조회  SELECT * FROM member WHERE member=?
     Optional<Member> findById(String id);
 }

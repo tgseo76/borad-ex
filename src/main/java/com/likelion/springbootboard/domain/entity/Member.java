@@ -1,5 +1,6 @@
 package com.likelion.springbootboard.domain.entity;
 
+import com.likelion.springbootboard.domain.dto.MemberDto;
 import com.sun.istack.NotNull;
 import com.sun.istack.Nullable;
 import lombok.*;

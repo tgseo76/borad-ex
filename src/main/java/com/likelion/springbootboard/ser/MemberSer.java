@@ -18,9 +18,12 @@ public class MemberSer {
 
     //회원가입 정보 db저장
     public Member save(MemberDto memberDto){
+        //1.dto -> entity
+        //2. save 호출
         Member member = memberRepo.save(memberDto.toEntity());
         return member;
     }
+
     //로그인
     public MemberDto login(MemberDto memberDto) {
         Optional<Member> byId = memberRepo.findById(memberDto.getId());
