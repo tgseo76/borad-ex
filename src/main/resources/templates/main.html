@@ -5,6 +5,72 @@
     <title>세션확인</title>
 </head>
 <body>
-  session 확인 : <p th:text="${session.id}"></p>
+session 확인 : <p th:text="${session.id}"></p>
 </body>
 </html>
+<!--<!DOCTYPE html>-->
+<!--<html lang="en" xmlns:th="http://www.thymeleaf.org">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>리스트 thym</title>-->
+<!--</head>-->
+
+<!--<style>-->
+<!--    .login{-->
+<!--        margin-left: 60%;-->
+<!--    }-->
+<!--    .layout {-->
+<!--        /*text-align: center;*/-->
+<!--        margin-left: 30% ;-->
+<!--        margin-top: 2%;-->
+<!--    }-->
+<!--</style>-->
+
+<!--<body>-->
+
+<!--<div class="login">-->
+<!--    <dvi style="float: left">-->
+<!--        회원정보 : <p th:text="${session.id}"></p>-->
+<!--    </dvi>-->
+<!--        <a href="/api/v1/member/logout" >로그아웃</a>-->
+
+<!--</div>-->
+<!--<div class = "layout">-->
+<!--    <table>-->
+<!--        <thead>-->
+<!--        <tr>-->
+<!--            <th>글번호(id)</th>-->
+<!--            <th>제목(title)</th>-->
+<!--        </tr>-->
+<!--        </thead>-->
+<!--        <tbody>-->
+<!--        <tr th:each="bbb : ${list}">-->
+<!--            <td th:text="${bbb.id}"></td>-->
+<!--            <td>-->
+<!--                &lt;!&ndash;                            @PathVariable 방식&ndash;&gt;-->
+<!--                <a th:text="${bbb.title}" th:href="@{/api/v1/boards/{id}(id=${bbb.id})}"></a>-->
+
+<!--                &lt;!&ndash;                    @GET방식&ndash;&gt;-->
+<!--                &lt;!&ndash;                    <a th:text="${bbb.title}" th:href="@{/api/v1/boards/(id=${bbb.id})}"></a>&ndash;&gt;-->
+<!--            </td>-->
+<!--        </tr>-->
+<!--        </tbody>-->
+<!--    </table>-->
+
+<!--    <th:block th:each="listpage : ${#numbers.sequence(startPage,endPage)}">-->
+<!--        <a th:if="${listpage != page}" th:href="@{/api/v1/boards/list(page=${listpage -1},keyword=${param.keyword})}" th:text="${listpage}"></a>-->
+<!--        <strong th:if="${listpage == page}" th:text="${listpage}" style="color : #f67e7e"></strong>-->
+<!--    </th:block>-->
+
+<!--    <form th:method="get">-->
+<!--        <input type="text" name="keyword">-->
+<!--        <button type="submit">검색</button>-->
+<!--    </form>-->
+
+
+<!--    <form  th:action="@{/api/v1/boards/}" th:method="get">-->
+<!--        <button type="submit">글작성</button>-->
+<!--    </form>-->
+<!--</div>-->
+<!--</body>-->
+<!--</html>-->

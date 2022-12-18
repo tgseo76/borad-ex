@@ -43,12 +43,12 @@ public class MemberController {
 
     //로그인 성공&실패
     @PostMapping("/login")
-    public String login(@ModelAttribute MemberDto memberDto, HttpSession httpSession) {
+    public String login(MemberDto memberDto, HttpSession httpSession) {
         MemberDto logResult = memberSer.login(memberDto);
         if (logResult!=null){
             //성공
             httpSession.setAttribute("id",logResult.getId());  //로그인한 회원 세션정보
-            return "main";
+            return "list";
         }else {
             //실패
             return "loginFail";

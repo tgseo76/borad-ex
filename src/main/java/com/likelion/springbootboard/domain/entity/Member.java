@@ -4,6 +4,8 @@ import com.likelion.springbootboard.domain.dto.MemberDto;
 import com.sun.istack.NotNull;
 import com.sun.istack.Nullable;
 import lombok.*;
+import org.hibernate.annotations.ColumnDefault;
+import org.hibernate.annotations.DynamicInsert;
 
 import javax.persistence.*;
 
@@ -12,6 +14,7 @@ import javax.persistence.*;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
+@DynamicInsert
 public class Member {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -22,5 +25,8 @@ public class Member {
     private String password;
     @NotNull
     private String name;
+    @ColumnDefault("'user'")
+    private String role;
+
 
 }
