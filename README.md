@@ -64,7 +64,7 @@
 ------------------------------------------
 ------------------------------------------
 ## Step 6 : 회원가입 & 로그인 security x
-<img src="https://user-images.githubusercontent.com/58171107/208955862-1a8d89f0-90a0-4d65-9917-b9b9af178266.PNG"  width="550" height="300"/>
-<img src="https://user-images.githubusercontent.com/58171107/208955956-cdb2b888-2f89-4a09-ae0e-ef162e2a93b4.PNG"  width="350" height="200"/>
-<img src="https://user-images.githubusercontent.com/58171107/208955957-925284fa-ac73-4130-bdaa-16ef5a9e2f44.PNG"  width="320" height="250"/>
-<img src="https://user-images.githubusercontent.com/58171107/208955955-c85693cd-083d-4f49-beed-b6fd1ce34dc4.PNG"  width="320" height="250"/>
+<img src="https://user-images.githubusercontent.com/58171107/208955862-1a8d89f0-90a0-4d65-9917-b9b9af178266.PNG"  width="80%" height="300"/>
+<img src="https://user-images.githubusercontent.com/58171107/208955956-cdb2b888-2f89-4a09-ae0e-ef162e2a93b4.PNG"  width="55%" height="200"/>
+<img src="https://user-images.githubusercontent.com/58171107/208955957-925284fa-ac73-4130-bdaa-16ef5a9e2f44.PNG"  width="48%" height="250"/>
+<img src="https://user-images.githubusercontent.com/58171107/208955955-c85693cd-083d-4f49-beed-b6fd1ce34dc4.PNG"  width="48%" height="250"/>
