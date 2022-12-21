@@ -50,7 +50,8 @@
 
 ![image](https://user-images.githubusercontent.com/58171107/206861857-b11b04fc-c71a-4c06-a930-6005eaacaf8d.png)
 ![image](https://user-images.githubusercontent.com/58171107/206861869-cad2d17f-f6f0-477f-96b9-d8170d07a716.png)
-
+------------------------------------------
+------------------------------------------
 ## Step 5 : 검색기능
 
 ![image](https://user-images.githubusercontent.com/58171107/206865957-f5ed8c76-3d15-410e-82f8-34a2e164155c.png)
@@ -60,4 +61,10 @@
 ![image](https://user-images.githubusercontent.com/58171107/206866002-5b99ffe9-a9aa-4408-95c2-2bbc107eafe5.png)
 
 
-
+------------------------------------------
+------------------------------------------
+## Step 6 : 회원가입 & 로그인 security x
+<img src="https://user-images.githubusercontent.com/58171107/208955862-1a8d89f0-90a0-4d65-9917-b9b9af178266.PNG"  width="550" height="350"/>
+<img src="https://user-images.githubusercontent.com/58171107/208955956-cdb2b888-2f89-4a09-ae0e-ef162e2a93b4.PNG"  width="400" height="300"/>
+<img src="https://user-images.githubusercontent.com/58171107/208955957-925284fa-ac73-4130-bdaa-16ef5a9e2f44.PNG"  width="400" height="300"/>
+<img src="https://user-images.githubusercontent.com/58171107/208955955-c85693cd-083d-4f49-beed-b6fd1ce34dc4.PNG"  width="400" height="300"/>
